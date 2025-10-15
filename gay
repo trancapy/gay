@@ -1,0 +1,371 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="project1.css">
+    <title>Project1</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body{
+    margin: 0px;
+    padding: 0px;
+    font-family: "Open Sans", serif;
+    font-size: 13px;
+    color: #5B5B5B;
+}
+
+.header-wrapper {
+    overflow: hidden;
+    width: 100%;
+    height: 120px;
+    background: rgb(181, 13, 13);
+}
+
+.header{
+    width: 1000px;
+    height: 120px;
+    margin: 0 auto;
+    padding: 0px;
+}
+
+.logo{
+    float: left;
+}
+
+.logo h1{
+    line-height: 120px;
+    margin: 0px;
+    padding: 0px;
+    font-size: 3em;
+    font-weight: 400;
+    letter-spacing: -2px;
+}
+
+.logo h1 a{
+    color: #ffffff;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Menu */
+.menu {
+    float: right;
+    margin: 0;
+    padding: 0;
+    height: 120px;
+    text-align: center;
+}
+
+.menu ul{
+    list-style: none;
+    margin: 0px;
+    padding-top: 50px;
+}
+
+.current_page_item a{
+    background: rgb(105, 6, 6);
+    border-radius: 5px;
+}
+.menu ul li{
+    display: inline-block;
+    
+    
+}
+
+.menu ul li a{
+    text-decoration: none;
+    padding: 10px 15px;
+    color: #ffffff;
+}
+
+.menu ul li:hover a{
+    color: #9fc517;
+}
+
+/*content*/
+
+.content {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 60px;
+    background: white;
+}
+
+.post{
+    width: 600px;
+    float: left;
+    padding: 0px 0px 40px 0px;
+}
+
+.post .title{
+    padding: 7px 0px 40px 0px;
+    letter-spacing: -1px;
+    font-size: 2.8em;
+    font-weight: 200;
+    margin: 0px;
+}
+
+.post .title a{
+    text-decoration: none;
+    color: #222222;
+}
+
+.entry .text{
+    text-align: justify;
+}
+
+/* links */
+
+.links{
+    padding-top: 20px;
+    margin-bottom: 30px;
+}
+
+.links a{
+    display: inline-block;
+    width: 90px;
+    padding: 5px;
+    background: #B50D0D;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.8em;
+}
+
+.links .more-link{
+    margin-right: 10px;
+}
+
+/* sidebar */
+.sidebar{
+    width: 260px;
+    float: right;
+    padding: 40px;
+    background: #F0F0F0;
+    border-radius: 7px;
+    margin: 0px;
+}
+
+.title-sidebar{
+    margin: 0px;
+    padding: 0px 0px 30px 0px;
+    font-size: 1.8em;
+    letter-spacing: -0.5px;
+    font-weight: 200;
+    color: #222222;
+}
+
+.sidebar ul{
+    list-style: none;
+    margin: 0px;
+    padding: 0px 0px 30px 0px;
+}
+
+.sidebar ul li{
+    line-height: 40px;
+    border-bottom: 1px solid #E7EBED;
+}
+
+.sidebar ul li a{
+    color: #B50D0D;
+    padding-left: 20px;
+    background: url("images/img04.jpg") no-repeat left 50%;
+}
+
+.clear-fix {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* featured-content */
+
+.featured-content{
+    padding: 0px 0px 30px;
+}
+
+.column1{
+    float: left;
+    width: 300px;
+    margin-right: 50px;
+}
+
+.featured-content h2{
+    padding: 0px 0px 20px;
+    font-size: 30px;
+    margin: 0px;
+    font-weight: 200;
+    color:rgb(34, 34, 34) ;
+}
+
+.featured-content p{
+    margin-top: 0px;
+    line-height: 180%;
+}
+
+.column2{
+    float: left;
+    width: 300px;
+}
+
+.column3{
+    float: right;
+    width: 300px;
+}
+.button a{
+    display: block;
+    float: left;
+    width: 90px;
+    padding: 5px;
+    background: rgb(181, 13, 13);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+/* footer */
+.footer{
+    width: 100%;
+    height: 140px;
+    background: #B50D0D;
+    text-align: center;
+}
+
+.footer p{
+    line-height: 140px;
+    color: #9fc517;
+    font-size: 15px;
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header-wrapper">
+            <div class="header">
+                <div class="logo">
+                    <h1>
+                        <a href="#">Breakeven</a>
+                    </h1>
+                </div>
+
+                <div class="menu">
+                    <ul>
+                        <li class="current_page_item">
+                            <a href="#">Home Page</a>
+                        </li>
+                        <li>
+                            <a href="#">Service</a>
+                        </li>
+                        <li>
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#">About</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <div class="page-content">
+                <div class="post">
+                    <h2 class="title">
+                        <a href="#">Welcome to Breakeven </a>
+                    </h2>
+                    <div class="entry">
+                        <a href="#">
+                            <img src="https://anhlqdhv.github.io/HTML_CSS/project_1_float/images/img05.jpg" alt="">
+                        </a>
+                        <p class="text">
+                            This is <strong>Breakeven</strong> , a free, fully standards-compliant CSS template designed by TEMPLATED. The photos in this template are from Fotogrph. This free template is released under the Creative Commons Attribution license, so you're pretty much free to do whatever you want with it (even use it commercially) provided you give us credit for it. Have fun :)
+                        </p>
+                        <p class="links">
+                            <a href="#" class="more-link">Read More</a>
+                            <a href="#" class="comment-link">Comments</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="sidebar">
+                    <p class="title-sidebar">Categories</p>
+                    <ul>
+                        <li>
+                            <a href="#">Aliquam libero</a>
+                        </li>
+                        <li>
+                            <a href="#">Consectetuer adipiscing elit</a>
+                        </li>
+                        <li>
+                            <a href="#">Metus aliquam pellentesque</a>
+                        </li>
+                        <li>
+                            <a href="#">Suspendisse iaculis mauris</a>
+                        </li>
+                        <li>
+                            <a href="#">Urnanet non molestie semper</a>
+                        </li>
+                        <li>
+                            <a href="#">Proin gravida orci porttitor</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="clear-fix">&nbsp;</div>
+            </div>
+
+            <div class="featured-content">
+                <div class="column1">
+                    <h2>Maecenas luctus</h2>
+                    <p>
+                        <img src="https://anhlqdhv.github.io/HTML_CSS/project_1_float/images/img06.jpg" alt="" width="300px" height="150px">
+                    </p>
+                    <p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
+                    <p class="button">
+                        <a href="#">Read More</a>
+                    </p>
+                </div>
+
+                <div class="column2">
+                    <h2>Maecenas luctus</h2>
+                    <p>
+                        <img src="https://anhlqdhv.github.io/HTML_CSS/project_1_float/images/img07.jpg" alt="" width="300px" height="150px">
+                    </p>
+                    <p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
+                    <p class="button">
+                        <a href="#">Read More</a>
+                    </p>
+                </div>
+
+                <div class="column3">
+                    <h2>Maecenas luctus</h2>
+                    <p>
+                        <img src="https://anhlqdhv.github.io/HTML_CSS/project_1_float/images/img08.jpg" alt="" width="300px" height="150px">
+                    </p>
+                    <p>Etiam non felis. Donec ut ante. In id eros. Suspendisse lacus turpis, cursus egestas at sem. Mauris quam enim, molestie.</p>
+                    <p class="button">
+                        <a href="#">Read More</a>
+                    </p>
+                </div>
+                <div class="clear-fix"></div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>
+                &copy; Project 1.Lập trình Web-CNTT - 2024
+            </p>
+        </div>
+    </div>
+</body>
+</html>
